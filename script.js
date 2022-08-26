@@ -1,20 +1,24 @@
 // PLAYER CODES
+function getPlayerChoice() {
 let playerSelection = prompt('Do you choose Rock, Paper or Scissors?')
     if (playerSelection === 'Rock' || playerSelection === 'Paper' || playerSelection === 'Scissors') {
         console.log("You chose " + `${playerSelection}`);
+        return playerSelection
     } else {
         console.log('Error! Pick Rock, Paper or Scissors')
+        return getPlayerChoice()
     }
+}
 
 // COMPUTER CODES
 function getComputerChoice() {
     let choices = ['Rock', 'Paper', 'Scissors'];
     let random = choices[Math.floor(Math.random() * 3)];
     return random; 
-    
  }
 
- function playRound(playerSelection, computerSelection) {
+ // GAME
+function playRound(playerSelection, computerSelection) {
     if (playerSelection === computerSelection){
         return ('Draw')
     } else if ((playerSelection === 'Rock') && (computerSelection === 'Scissors')) {
@@ -29,9 +33,17 @@ function getComputerChoice() {
         return ('Computer Wins! Paper beats Rock.')
     } else if ((computerSelection === 'Rock') && (playerSelection === 'Scissors')) {
         return ('Computer Wins! Rock beats Scissors.')
-}
+    }
 }
 
-let computerSelection = getComputerChoice();
-console.log("Computer chose " + `${computerSelection}`);
-console.log(playRound(playerSelection, computerSelection));
+//ROUNDS
+function game() {
+    for (let i = 1; i < 6; i++){
+        console.log('Round  ' + i)
+        let playerSelection = getPlayerChoice();
+        let computerSelection = getComputerChoice();
+        console.log("Computer chose " + `${computerSelection}`);
+        console.log(playRound(playerSelection, computerSelection));
+    }
+}
+game()
