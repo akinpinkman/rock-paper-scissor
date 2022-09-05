@@ -1,0 +1,32 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: rgb(0,0,0);
+background: linear-gradient(66deg, rgba(0,0,0,1) 10%, rgba(83,52,131,1) 40%, rgba(15,52,96,1) 78%, rgba(6,18,33,1) 88%);
+}
+
+.firstSection {
+  display: flex;
+  background-color: #6E3CBC
+  ;
+}
+
+.secondSection {
+display: flex;
+justify-content: center;
+background-color: #6867AC;
+margin: 135px 166px 376px 166px;
+padding: 128px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  background-color:#6E3CBC
+}
+

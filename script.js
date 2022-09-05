@@ -1,6 +1,6 @@
 // PLAYER CODES
 function getPlayerChoice() {
-let playerSelection = prompt('Do you choose Rock, Paper or Scissors?')
+//let playerSelection = prompt('Do you choose Rock, Paper or Scissors?')
     if (playerSelection === 'Rock' || playerSelection === 'Paper' || playerSelection === 'Scissors') {
         console.log("You chose " + `${playerSelection}`);
         return playerSelection
@@ -36,7 +36,7 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
-//ROUNDS
+/*ROUNDS
 function game() {
     for (let i = 1; i < 6; i++){
         console.log('Round  ' + i)
@@ -45,5 +45,5 @@ function game() {
         console.log("Computer chose " + `${computerSelection}`);
         console.log(playRound(playerSelection, computerSelection));
     }
-}
+}*/
 game()
