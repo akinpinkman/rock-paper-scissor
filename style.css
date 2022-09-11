@@ -5,12 +5,13 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #9381ff;
+  background-color: #c88489;
 }
 
 .firstSection {
-  background-color: #25283D;
-  justify-content: center;  
+  background-color: #ecbabe;
+  display: flex;
+  justify-content: space-around;
 }
 
 .navBar {
@@ -19,52 +20,59 @@ body {
 
 .Github,
 .Twitter {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  
+  margin: 0 20rem;
 }
 
 .secondSection {
-display: flex;
-justify-content: center;
-background-color: #2b2e46a9;
-margin: 135px 166px auto 166px;
-padding: 128px;
-}
-
-
-.footer {
   display: flex;
-  
-  justify-content: center;
-  height: 60px;
-  background-color:#25283d;
-}
-
-.userScore,
-.computerScore {
-  padding: 0rem 8rem;
-}
-
-.image{
-  display: flex;
+  background-color: #86363c;
+  margin: 8rem 20rem;
+  padding: 5rem 5rem;
+  flex-direction: column;
   align-items: center;
 }
 
-span {
-  font-size: 3rem;
-  font-weight: 600;
-  color: #FFFE00 ;
+.playerSection {
+  display: flex;
+  margin: 0 0 3rem 0;
+}
+
+.computerSection {
+  display: flex;
+  margin: 5rem 0 0 0;
+}
+
+.playerScore,
+.computerScore {
+  display: flex;
+  align-items: flex-end;
+}
+
+.githubHeader,
+.twitterHeader {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #919090;
+  display: flex;
+  justify-content: center;
 }
 
 ul {
   list-style: none;
 }
 
-a {
-  color: #FFFE00;
-  text-decoration: none;
-  font-size: 1.5rem;
-  font-weight: 800;
+img {
+  min-width: 4rem;
+  max-width: 10rem;
+}
+
+.reset {
+  display: none;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  height: 3rem;
+  background-color: #ecbabe;
 }

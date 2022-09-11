@@ -1,53 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock - Paper - Scissor</title>
-    
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="firstSection">
-
-        <div class="navBar">
-            <div class="Github">
-                <a href="https://github.com/akinpinkman">Github
-                    <img src="/rps-img/githubLogo.png" width="75" height="75">
-                </a>
-            </div>
-
-            <div class="Twitter">
-                <a href="https://twitter.com/akinnpinkmann">Twitter 
-                    <img src="/rps-img/twitterLogo.png" width="75" height="75">
-               </a>
-            </div>  
+      <div class="navBar">
+        <div class="Github">
+          <a href="https://github.com/akinpinkman">
+            <img src="/rps-img/githubLogo.png" width="4rem" />
+          </a>
+          <div class="githubHeader">Github</div>
         </div>
+
+        <div class="Twitter">
+          <a href="https://twitter.com/akinnpinkmann">
+            <img src="/rps-img/twitterLogo.png" width="4rem" />
+          </a>
+          <div class="twitterHeader">Twitter</div>
+        </div>
+      </div>
     </div>
 
     <div class="secondSection">
-        <div class="userScore">
-            <img src="./rps-img/user1.png" width="240" height="240">
-            <span>USER CAT</span>
-        </div>
-    
-     <div class="image">
-        <img src="./rps-img/vs.png" width="200" height="200">
-     </div>
+      <div class="score">
+        <h1 class="ties">Ties: 0</h1>
+      </div>
 
-        <div class="computerScore">
-            <img src="./rps-img/user2.png" width="240" height="240">
-            <span>EVIL CAT</span>
+      <div class="winnerDiv">
+        <h1 class="winner"></h1>
+        <button class="reset" onclick="resetGame()">Play Again!</button>
+      </div>
+
+      <div class="playerSection">
+        <h3 class="playerChoice"></h3>
+        <h3 class="playerScore">Score: 0</h3>
+
+        <div class="playerImgs">
+          <img src="./rps-img/rock.png" alt="Rock" class="pImg" id="rock" />
+          <img src="./rps-img/paper.png" alt="Paper" class="pImg" id="paper" />
+          <img
+            src="./rps-img/scissors.png"
+            alt="Scissors"
+            class="pImg"
+            id="scissors"
+          />
         </div>
-    
+      </div>
+
+      <div class="computerSection">
+        <h3 class="computerChoice"></h3>
+        <h3 class="computerScore">Score: 0</h3>
+        <div class="computerImgs">
+          <img src="./rps-img/rock.png" alt="Rock" class="rock" />
+          <img src="./rps-img/paper.png" alt="Paper" class="paper" />
+          <img src="./rps-img/scissors.png" alt="Scissors" class="scissors" />
+        </div>
+      </div>
     </div>
+
     <div class="footer">
-       <p>Non-Copyrighted © akinpinkman</p>
+      <p>Non-Copyrighted © akinpinkman</p>
     </div>
-
-
-</body>
+  </body>
+  <script src="main.js"></script>
 </html>
